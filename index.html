@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Link Harvester</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Link Harvester</h1>
+      </div>
+      <div class="inputSection">
+        <div class="uploadSection">
+          <div class="chooseButton">
+            <input class="chooseFileButton" type='file' name="files" id="files" hidden="hidden" />
+            <label type="button" id="custom-button" for="files">Choose a File</label>
+            <span id="custom-text">No file chosen.</span>
+            </div> <!-- end chooseButton -->
+            <button id=upload>Upload</button>
+            </div><!-- end uploadSection-->
+            <textarea id="markupText" rows="10" cols="10" placeholder="Paste text here, or use button above to upload a text file.";></textarea>
+            <div class="harvestClear">
+              <button id="harvestButton">Harvest</button>
+              <button id="clearButton">Clear Text</button>
+              </div> <!-- end harvestClear-->
+              </div><!-- end inputSection -->
+              <div id="result"></div> <!-- end result -->
+              </div><!-- end container -->
+            </body>
+            <script type="text/javascript" src="main.js"></script>
+          </html>
