@@ -4,6 +4,8 @@
 */
 
 (function($) {
+    'use strict';
+
     var fileInput = $('#files');
     var uploadButton = $('#upload');
     var clearButton = $('#clearButton');
@@ -36,7 +38,7 @@
     harvestButton.on('click', function() {
         var testString = markupText.val();
         results.empty();
-        retObj = {};
+        var retObj = {};
         // load links into object
         retObj["links"] = harvest(testString, "links");
         // load email addresses into object
@@ -49,7 +51,7 @@
             $("#result").append(`<div class="header"><h1>No links or email addresses available.</h1></div>`);
         }
 
-        for (key1 in retObj) {
+        for (var key1 in retObj) {
 
             if (key1 === "emailAddresses") {
                 var header = $('<div style="margin: 20px;""><ol>').html("<h2>Email Addresses:</h2>");
